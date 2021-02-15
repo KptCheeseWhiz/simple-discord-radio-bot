@@ -1,33 +1,35 @@
 {
-    "name": "radio",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "dependencies": {
-        "@discordjs/opus": "^0.3.2",
-        "discord.js": "^12.3.1",
-        "dotenv": "^8.2.0",
-        "node-fetch": "^2.6.1"
-    },
-    "devDependencies": {
-        "@types/node": "^14.14.27",
-        "@types/node-fetch": "^2.5.7",
-        "ts-node": "^8.10.2",
-        "typescript": "^3.9.7"
-    },
-    "scripts": {
-        "prestart": "npm run build",
-        "dev": "ts-node src/index.ts",
-        "start": "node out/index.js",
-        "clean": "rm -rf ./out || true",
-        "prebuild": "npm run clean",
-        "build": "tsc",
-        "postbuild": "cp -R package* ./out"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "prettier": {
-        "tabWidth": 4
-    }
+  "name": "radio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "ffmpeg-static": "^4.2.7",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/ffmpeg-static": "^3.0.0",
+    "@types/node": "^14.14.27",
+    "@types/node-fetch": "^2.5.7",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "prestart": "npm run build",
+    "dev": "ts-node src/index.ts",
+    "start": "node out/index.js",
+    "clean": "rm -rf ./out || true",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "postbuild": "cp -R package* ./out"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "tabWidth": 2
+  }
 }
